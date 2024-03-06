@@ -1,0 +1,214 @@
+:root {
+  --greydark: rgb(11, 13, 15);
+  --greylight: rgb(221, 219, 219);
+  --fontcolor: white;
+  --backColor: rgba(0, 0, 0, 0.7);
+  --primary:rgba(128, 0, 128);
+}
+body {
+  color: var(--fontcolor);
+  font-family: sans-serif;
+  background: url("/public/bg.jpg");
+  /* backdrop-filter: blur(px); */
+  z-index: -1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#startImg{
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white ;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-iteration-count: once;
+  
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0%;
+    transform: translateY(-30px);
+  }
+  100%{
+    opacity: 100%;
+    transform: translateY(0px);
+  }
+}
+
+.btn3{
+  background-color: #282828d1;
+  color:white
+}
+.btn3:hover{
+  color: white;
+  font-size: 1.1em;
+  border: solid 1px white;
+}
+
+.btnPrimary{
+  background-color: var(--primary);
+  color:white
+}
+
+.btnPrimary:hover{
+  font-size: 1.1em;
+  color: white;
+}
+
+.btnSecondary{
+  color: white;
+  text-decoration: underline;
+  padding:0px
+}
+ 
+.btnSecondary:hover{
+  color: var(--primary)
+}
+
+.register{
+  height: 100vh;
+  width: 40vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#signup,#login{
+  width: 350px;
+  padding: 20px;
+  background-color: var(--backColor);
+  color: white;
+}
+
+.brand{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+#notiCnt{
+  position: absolute;
+  right: 10px;
+  color: white;
+  background: red;
+  padding: 0px 5px 0px 5px;
+  border-radius: 50%;
+  bottom: 23px;
+}
+.darkContainer{
+  margin:auto;
+  width: 90vw;
+  padding: 10px 30px;
+  background-color: var(--backColor);
+}
+ul{
+  list-style-type:none;
+}
+.content{
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-delay: 100ms;
+  animation-iteration-count: once;
+ 
+}
+#logo{
+  width: 35px;
+  object-fit: contain;
+}
+.navbar{
+  background-color: var(--backColor)
+}
+#start{
+  height: 100vh;
+}
+.window {
+  background-color: var(--greydark);
+  color: var(--fontcolor);
+  padding: 30px;
+}
+.userInfo {
+  color: var(--fontcolor);
+}
+
+
+#window{
+  min-height: 100vh;  
+  height: max-content;
+}
+#root{
+  height: 100vh;
+}
+.control{
+  display: none;
+}
+
+.loader{
+  animation-duration: 800ms;
+  animation-iteration-count: infinite;
+  animation-name: spin;
+  animation-timing-function: linear;
+}
+@keyframes spin{
+  0% {
+    rotate: 0deg;
+  }
+  50%{
+    rotate: 180deg;
+  }
+  100%{
+    rotate: 360deg;
+  }
+ 
+}
+
+.navbar-brand{
+  cursor: pointer;
+}
+#text{
+  height: max-content;
+}
+
+.rest{
+  color: #696262;
+}
+  
+#wait #play #stop #timer{
+  display: none;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background:grey; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
