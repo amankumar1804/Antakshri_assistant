@@ -24,8 +24,8 @@ class About extends Component{
                 <h1 className="pt-3 ps-4 text-danger">About Developers</h1>
                 </div>
                 <div className="mt-2 ">
-                    <h4>Krishan Kant Mehra (19JE0450)</h4>
-                    <h4>Ankit Kumar (19JE0141)</h4>
+                    <h4>Aman kumar</h4>
+                    
                 </div>
         
         <br/>
